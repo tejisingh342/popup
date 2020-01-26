@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image PopUp</title>
+	<style>
+		body
+		{
+			margin: 0;
+			padding: 0;
+		}
+		#popup_main
+		{
+			display: none;
+			position: fixed;
+			width: 100%;
+			height:100%;
+			background:rgba(0,0,0,.6);
+			z-index: 1001;
+		}
+		#popup
+		{
+			width: 500px;
+			height:250px;
+			background-image: linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)),  url('image1.jpg');
+			background-size: cover;
+			position:absolute;
+			top:50%;
+			left:50%;
+			transform:translate(-50%, -50%);
+			box-shadow: 3px 3px 10px 2px white;
+			text-align: center;
+		}
+		#news_heading
+		{
+			transform:translateY(20px);
+			color: white;
+		}
+		#email_id
+		{
+			width:60%;
+			padding:5px;
+			margin-top:20px;
+			margin-bottom:20px;
+		}
+		.button
+		{
+			background-color: #0fc0fa;
+			border: none;
+			font-size: 1rem;
+			padding: .6rem 1rem;
+			color: white;
+		}
+	</style>
+</head>
+<body>
+	<div id="popup_main">
+		<div id="popup">
+			<h1 id="news_heading">Subscribe to our Newslater.</h1>
+			<input type="email" name="" id="email_id" placeholder="Enter Your Email"><br>
+			<button class="button">Subscribe</button>
+			<button class="button">No Thanks</button>
+		</div>
+	</div>
+
+	<script src="jquery-3.4.1.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			setTimeout(function(){
+				$('#popup_main').fadeIn(500);
+			}, 5000);
+		});
+
+		$('.button').click(function(){
+			$('#popup_main').fadeOut(500);
+		});
+	</script>
+
+<div style="background-color: black;color: white">
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor beatae doloremque at, harum quis similique quos accusamus laboriosam ipsam, iste totam fugit, quasi itaque recusandae. Modi laudantium culpa quis at.</p>
+</div>
+</body>
+</html>
